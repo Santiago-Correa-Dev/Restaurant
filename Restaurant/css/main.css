@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 0;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-basis: 100%;
+    flex: 1 1 0;
+    height: 80px;
+}
+
+.fifty {
+    width: 50%;
+    float: left;
+}
+
+.left img {
+    margin-top: 1.4em;
+   margin-left: 3em;
+    height: 24px;
+}
+
+.burger-nav {
+	display: none;
+}
+
+.fifty nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin-top: 1.4em;
+    margin-left: 3em
+}
+
+.fifty ul li {
+    margin: 0 1.3em;
+}
+
+.fifty li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
+.one-hundred {
+    width: 100%;
+    display: grid;
+    border-bottom: 4px solid #f34949;
+}
+
+.menu-image {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.menu-image img {
+    height: 50px;
+}
+
+img {
+   max-width: 100%;
+    max-height: 100%;
+}
+
+#home-menu ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+#home-menu ul:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#home-menu li{
+    float: left;
+    width: 42%;
+    padding: 0;
+    margin: 20px 0 20px 8%;
+}
+
+#home-menu li:nth-child(odd){
+    margin: 20px 8% 20px 0;
+}
+
+.dish{
+    float: left;
+    color: #555;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    padding-right: 15px;
+}
+
+.price{
+    float: right;
+    color: #555;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    padding-left: 15px;
+}
+
+.description{
+    clear: both;
+    display: block;
+    color: #999;
+    font-style: italic;
+    font-size: 14px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    position: relative;
+    top: -8px;
+}
+
+#featured{
+    margin-top: 100px;
+}
+
+#featured ul{
+    padding: 0;
+}
+
+#featured li{
+    float: left;
+    width: 23%;
+    margin: 1%;
+    list-style-type: none; 
+}
+
+#featured li img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#featured li a{
+    color: #333;
+    text-decoration: none;
+    float: left;
+}
+
+#featured li span{
+    float: right;
+    color: #333;
+}
+
+#featured ul:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+footer{
+    background: #3b3b3b;
+    margin-top: 100px;
+    padding: 30px 0;
+}
+
+footer:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+footer ul{
+    float: left;
+    padding: 0;
+    list-style-type: none;
+    color: #eee;
+    width: 31%;
+    margin-right: 2%;
+}
+
+footer li{
+    margin: 10px 0;
+}
+
+footer a{
+    color: #eee;
+    text-decoration: none;
+}
+
+@media screen and (max-width : 500px) {
+    .wrapper {
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    header {
+    display: flex;
+    flex-basis: 100%;
+    flex: 1 1 0;
+    height: auto;
+}
+    
+    
+    .fifty {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .menu-image img {
+    height: 32px;
+}
+    
+    #burger-nav {
+		display: block;
+		height: 48px;
+		width: 100%;
+		background: 
+		url(../images/menu.svg) no-repeat center /contain;
+		cursor: pointer; 
+		text-align: center;
+		padding: 1em;
+        margin-top: 1em;
+	}
+
+
+	nav {
+		width: 100%;
+		padding: 0;
+	}
+
+	.fifty nav ul {
+		overflow: hidden;
+		display: block;
+		height: 0;
+        margin: 0.9em 0;
+
+	}
+    
+    .fifty ul li {
+        margin: 0;
+        
+    }
+
+	nav ul.open{
+		height: auto;
+	}
+
+	nav ul li {
+		float: none;
+		width: 100%;
+		margin: 0;
+		padding: 20px;	
+	}
+
+	nav ul li a {
+		color: #000;
+		padding: 10px;
+		display: block;
+		text-align: left;
+		margin: 0;
+		border-top: 1px solid #000;
+	}
+
+    .left img {
+        margin: 0;
+    }
+    
+    #featured li {
+        display: inline-block;
+        width: 47%;
+    }
+}
+
+@media screen and (min-width : 501px) and (max-width : 768px) {
+    .fifty {
+        width: 42%;
+    }
+    
+    .fifty nav ul {
+         margin-left: 0;
+        
+    }
+}
