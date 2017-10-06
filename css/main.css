@@ -54,6 +54,7 @@ header {
 .one-hundred {
     width: 100%;
     display: grid;
+	justify-content: center;
     border-bottom: 4px solid #f34949;
 }
 
